@@ -1,0 +1,1 @@
+window.alert("This website contains fast flashing lights, please don't try to provoke any braindance");
