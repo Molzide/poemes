@@ -57,6 +57,9 @@ footer {
     top: 0;
     margin: 20px;
 }
+.new img {
+    animation: flashing-star 0.5s infinite;
+}
 .new::after {
     content: "Cyberbaby Online !";
     position: absolute;
@@ -151,5 +154,20 @@ footer {
     }
     0%, 100% {
         background-color: rgb(31, 255, 177)
+    }
+}
+
+@keyframes flashing-star {
+    75% {
+        filter: hue-rotate(25);
+    }
+    50% {
+        filter: hue-rotate(50);
+    }
+    25% {
+        filter: hue-rotate(75);
+    }
+    0%, 100% {
+        filter: hue-rotate(100);
     }
 }
